@@ -1,0 +1,17 @@
+{% extends 'meal_planner/base.html' %}
+{% load bootstrap5 %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <form method="post" class="signup">
+                    {% csrf_token %}
+                    {% bootstrap_form form%}
+                    {% buttons %}
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    {% endbuttons %}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

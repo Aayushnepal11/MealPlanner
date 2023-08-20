@@ -1,0 +1,16 @@
+Category,Meal,Description,Type
+Breakfast,Oatmeal,Healthy oatmeal with fruits and nuts,Vegan
+Breakfast,Smoothie,Spinach and berry smoothie with almond milk,Vegan
+Breakfast,Yogurt Parfait,Greek yogurt with granola and mixed berries,Vegetarian
+Breakfast,Scrambled Eggs,Scrambled eggs with vegetables and whole wheat toast,Non-Vegetarian
+Breakfast,Avocado Toast,Sliced avocado on whole grain toast with poached egg,Vegetarian
+Lunch,Chicken Salad,Grilled chicken with mixed greens and balsamic vinaigrette,Non-Vegetarian
+Lunch,Tuna Salad,Canned tuna with lettuce, tomato, cucumber, and light dressing,Non-Vegetarian
+Lunch,Veggie Wrap,Whole wheat wrap with hummus, vegetables, and feta cheese,Vegetarian
+Lunch,Quinoa Bowl,Cooked quinoa with roasted vegetables and tahini sauce,Vegan
+Lunch,Bean Burrito,Black bean and rice burrito with salsa and guacamole,Vegetarian
+Dinner,Salmon,Grilled salmon with steamed broccoli and quinoa,Non-Vegetarian
+Dinner,Chicken Stir-Fry,Sautéed chicken with vegetables in a teriyaki sauce,Non-Vegetarian
+Dinner,Vegetable Curry,Mixed vegetable curry with brown rice,Vegan
+Dinner,Pasta Primavera,Whole wheat pasta with sautéed vegetables and marinara sauce,Vegetarian
+Dinner,Stuffed Bell Peppers,Bell peppers stuffed with lean ground turkey and rice,Vegetarian

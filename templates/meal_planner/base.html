@@ -1,0 +1,32 @@
+{% load bootstrap5 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if title %}
+            {{title}}
+            {% else %}
+            Meal Planner
+        {% endif %}
+    </title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'scss/style.css' %}">
+</head>
+<body>
+    {% block page_header %}
+        <div class="container">
+            {% include 'includes/nav.html' %}
+        </div>
+    {% endblock page_header %}
+    {% block content %}{% endblock content %}
+    {% bootstrap_javascript %}
+    <script src="{% static 'js/index.js' %}"></script>
+    <footer class="footer">
+        <p>&copy; {% now 'Y' %} Meal Planner. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

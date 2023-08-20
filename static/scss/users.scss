@@ -1,0 +1,85 @@
+.sidebar {
+    background-color: #000000 !important;
+    color: #fff;
+    height: 100vh;
+
+    .nav-link {
+        color:#fff;
+        font-size: 18px;
+        padding: 10px;
+        margin-top: 10px;
+        &:hover {
+            color: #333;
+            background-color: #fff;
+        }
+    }
+}
+
+.form{
+    display: flex;
+    justify-content: space-around;
+    gap: 20%;
+    align-items: center;
+    flex-direction: column;
+    textarea{
+        width: 250px;
+        height: 50px;
+    }
+}
+
+
+#id_food_category, #id_gender{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* health_form.scss */
+
+// Import any necessary stylesheets here
+
+/* Customize the form styling */
+.health-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="decimal"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+/* Arrange form fields on separate rows */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}

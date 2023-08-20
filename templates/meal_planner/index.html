@@ -1,0 +1,23 @@
+{% extends 'meal_planner/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <section class="hero-section">
+                <h1>Your Ultimate Meal Planning Solution</h1>
+                <p>Plan, organize, and enjoy delicious meals with ease!</p>
+                <a href="{% url 'users:signup' %}" class="cta-button">Get Started</a>
+            </section>
+        </div>
+        <div class="row">
+            {% for service in  services%}
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="{{service.image.url}}" class="img-thumbnail" alt="service.title">
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

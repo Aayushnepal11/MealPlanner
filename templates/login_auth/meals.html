@@ -1,0 +1,22 @@
+{% extends 'login_auth/user_base.html' %}
+{% load bootstrap5 %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-7">
+            <h1 class="display-5">Meals</h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for meal  in meals %}
+            <div class="col-md-5">
+                <div class="card">
+                    <h1 class="card-title">{{meal.meal_name}}</h1>
+                    <div class="card-body">
+                        <p>{{meal.description}}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

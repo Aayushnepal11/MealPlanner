@@ -1,0 +1,15 @@
+.jazzmin-login-page{
+    min-height: 0 !important;
+    .login-box{
+        .login-logo{
+            h1{
+                picture{
+                    width: 100%;
+                }    
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

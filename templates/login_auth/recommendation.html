@@ -1,0 +1,30 @@
+{% extends 'login_auth/user_base.html' %}
+{% load bootstrap5 %}
+{% block content %}
+    <h2>Meal Suggestions</h2>
+    <h3>Breakfast:</h3>
+    <p>{{ request.session.recommendations.breakfast_meal.Meal }}</p>
+    <p>{{ request.session.recommendations.breakfast_meal.Description }}</p>
+
+    <h3>Lunch:</h3>
+    <p>{{ request.session.recommendations.lunch_meal.Meal }}</p>
+    <p>{{ request.session.recommendations.lunch_meal.Description }}</p>
+
+    <h3>Dinner:</h3>
+    <p>{{ request.session.recommendations.dinner_meal.Meal }}</p>
+    <p>{{ request.session.recommendations.dinner_meal.Description }}</p>
+
+    {% if extra_meal %}
+        <h3>Extra Meal:</h3>
+        <p>{{ request.session.recommendations.extra_meal.Meal }}</p>
+        <p>{{ request.session.recommendations.extra_meal.Description }}</p>
+    {% endif %}
+    <h2>Workout Suggestions:</h2>
+    <ul>
+        {% for suggestion_category in request.session.recommendations.workout_suggestions.values %}
+            <li>
+                <strong>{{ suggestion_category | random }}</strong><br>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
