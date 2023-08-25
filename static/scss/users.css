@@ -30,46 +30,4 @@
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-/* health_form.scss */
-/* Customize the form styling */
-.health-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
-}
-.health-form label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.health-form input[type=radio] {
-  margin-right: 5px;
-}
-.health-form input[type=text],
-.health-form input[type=number],
-.health-form input[type=decimal] {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-.health-form button[type=submit] {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Arrange form fields on separate rows */
-.form-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
 }/*# sourceMappingURL=users.css.map */

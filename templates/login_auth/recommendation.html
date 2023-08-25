@@ -1,6 +1,7 @@
 {% extends 'login_auth/user_base.html' %}
 {% load bootstrap5 %}
 {% block content %}
+<div class="row">
     <h2>Meal Suggestions</h2>
     <h3>Breakfast:</h3>
     <p>{{ request.session.recommendations.breakfast_meal.Meal }}</p>
@@ -27,4 +28,5 @@
             </li>
         {% endfor %}
     </ul>
+</div>
 {% endblock content %}

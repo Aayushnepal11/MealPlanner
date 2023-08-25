@@ -8,6 +8,31 @@
     <title>Meal Planner::Home</title>
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'scss/users.css' %}">
+    <style>
+        .home_page{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="decimal"] {
+            width: 250px !important;
+        }
+        .mb-3{
+            display: flex;
+            gap: 20%;
+        }
+        .form-label{
+            margin-top: 10px;
+        }
+        .d-flex{
+            flex: 1;
+        }
+        .display-4{
+            font-size: 3rem;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -15,7 +40,7 @@
             {% block sidebar %}
                 {% include 'login_auth/includes/sidebar.html' %}
             {% endblock sidebar %}
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 home_page">
                     {% block content %}{% endblock content %}
             </main>
         </div>
