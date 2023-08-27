@@ -84,12 +84,11 @@ class UserHomePageView(FormView):
             'age': form.cleaned_data['age'],
             'weight': form.cleaned_data['weight'],
             'height ': form.cleaned_data['height'],
-            'generic_disease': form.cleaned_data['generic_disease'],
             'food_category': form.cleaned_data['food_category'],
         }
         meals = csv_file_reader.load_csv_data('users\meal.csv')
         suggested_meals = [meal for meal in meals if meal['Type'].lower() == user_inputs['food_category']]
-        return HttpResponse(suggested_meals)
+        # return HttpResponse(suggested_meals)
 
         if suggested_meals:
             random.shuffle(suggested_meals)

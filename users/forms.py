@@ -36,5 +36,4 @@ class HealthForm(forms.Form):
     age = forms.IntegerField(min_value=0)
     weight = forms.DecimalField(min_value=0, max_digits=5, decimal_places=2)
     height = forms.DecimalField(min_value=0, max_digits=6, decimal_places=2)
-    generic_disease = forms.CharField(max_length=100, required=False)
     food_category = forms.ChoiceField(choices=FOOD_CHOICES, widget=forms.RadioSelect)
